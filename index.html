@@ -7,12 +7,17 @@
         <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/5.10.2/css/font-awesome.min.css"> -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+        
+        <script src="lib/js/pong/controls.js"></script>
+        <script src="lib/js/pong/settings.js"></script>
+        <script src="lib/js/pong/draw.js"></script>
+
         <!-- <link rel="stylesheet" href="styles/debug.css"> -->
     </head>
 
-	<body>
+	<body onload="bigStart()">
 
-        <nav class="navbar is-info" role="navigation" aria-label="main navigation" style="margin-bottom: 80px">
+        <nav class="navbar is-info" role="navigation" aria-label="main navigation" style="margin-bottom: 0px">
             <div class="navbar-brand">
                 <a class="navbar-item" href="index.html">
                     <h1 class="is-4">Aamir's Blog</h1>
@@ -67,7 +72,22 @@
                 </div>
             </div>
         </nav>
-        
+
+
+        <section class="hero is-black is-medium" style="margin-bottom:80px">
+  <div class="hero-body">
+    <div class="container">
+        <canvas id="mycanvas" width="1700px" height="350px"></canvas>
+      <h1 class="title">
+        Aamir's Blog
+      </h1>
+      <h2 class="subtitle">
+        Articles ranging from Medicine to Space 
+      </h2>
+    </div>
+  </div>
+</section>
+
         <div class="block" style="margin-left:100px;margin-right:100px;">
             <nav class="level">
                 <!-- left side -->
